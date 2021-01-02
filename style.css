@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+body {
+  background: url("/img.jpg") no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formbox {
+  position: relative;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.205);
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.568);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.568);
+  width: 30vw;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.formbox .buttonbox {
+  width: 210px;
+  position: relative;
+  margin: 45px auto;
+  top: 10px;
+  -webkit-box-shadow: 0 0 10px 2px rgba(110, 110, 110, 0.219);
+          box-shadow: 0 0 10px 2px rgba(110, 110, 110, 0.219);
+  border-radius: 30px;
+}
+
+.formbox .buttonbox #btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+  border-radius: 30px;
+  background-color: #ff7a3c;
+}
+
+.formbox .buttonbox .togglebtn {
+  position: relative;
+  outline: none;
+  padding: 18px 30px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.formbox .inputbox {
+  position: absolute;
+  top: 27%;
+  width: 70%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.formbox .inputbox .input-field {
+  width: 100%;
+  padding: 7px 0;
+  margin: 20px 0;
+  border: none;
+  border-bottom: 2px solid #2c2c2c;
+  outline: none;
+  background: transparent;
+}
+
+.formbox .inputbox input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.836);
+  letter-spacing: 1px;
+}
+
+.formbox .inputbox input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.836);
+  letter-spacing: 1px;
+}
+
+.formbox .inputbox input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.836);
+  letter-spacing: 1px;
+}
+
+.formbox .inputbox input::placeholder {
+  color: rgba(0, 0, 0, 0.836);
+  letter-spacing: 1px;
+}
+
+.formbox .inputbox .checkbox {
+  margin: 40px 10px 26px 0;
+}
+
+.formbox .inputbox span {
+  position: absolute;
+  bottom: 68px;
+  font-size: 14px;
+  color: #0c0c0c;
+}
+
+.formbox .inputbox .submitbtn {
+  padding: 15px 30px;
+  display: block;
+  margin: auto;
+  width: 85%;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ff7a3c;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.formbox .inputbox .submitbtn:hover {
+  background-color: #f76835;
+}
+
+.formbox #login {
+  left: 50px;
+}
+
+.formbox #signup {
+  left: 450px;
+}
+
+@media screen and (max-width: 991px) {
+  .formbox {
+    width: 55vw;
+    height: 90vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

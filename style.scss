@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+
+}
+
+
+$pclr:#ff7a3c;
+
+body {
+    background: url("/img.jpg")no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formbox {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.568);
+    width: 30vw;
+    height: 85vh;
+    overflow: hidden;
+
+    .buttonbox {
+        width: 210px;
+        position: relative;
+        margin: 45px auto;
+        top: 10px;
+        box-shadow: 0 0 10px 2px rgba(110, 110, 110, 0.219);
+        border-radius: 30px;
+        #btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            transition: 0.6s all ease;
+            border-radius: 30px;
+            background-color: $pclr;
+        }
+        .togglebtn {
+            position: relative;
+            outline: none;
+            padding: 18px 30px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+    }
+
+    .inputbox {
+        position: absolute;
+        top: 27%;
+        width: 70%;
+        transition: 0.5s;
+
+        .input-field {
+            width: 100%;
+            padding: 7px 0;
+            margin: 20px 0;
+            border: none;
+            border-bottom: 2px solid rgb(44, 44, 44);
+            outline: none;
+            background: transparent;
+        
+        
+
+
+            
+        }
+        input::placeholder{
+            color:rgba(0, 0, 0, 0.836);
+            letter-spacing: 1px;
+        }
+        .checkbox {
+            margin: 40px 10px 26px 0;
+            
+        }
+        span {
+            position: absolute;
+            bottom: 68px;
+            font-size: 14px;
+            color: rgb(12, 12, 12);
+        }
+        .submitbtn {
+            padding: 15px 30px;
+            display: block;
+            margin: auto;
+            width: 85%;
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+            background-color:  $pclr;
+            transition: 0.6s;
+            &:hover{
+                background-color:rgb(247, 104, 53);
+                
+            }
+        }
+    }
+    #login {
+        left: 50px;
+    }
+    #signup {
+        left: 450px;
+    }
+}
+
+
+@media screen and (max-width:991px){
+
+    .formbox {
+        width: 55vw;
+        height: 90vh;
+    }    
+}
